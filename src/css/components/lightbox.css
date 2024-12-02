@@ -1,3 +1,28 @@
 /**
 * Lightbox
 */
+#lightbox{
+    position: fixed;
+    border-radius: 20px;
+border-color: #444;
+border-width: 10px;
+background-color: #CCC;
+overflow: visible;
+}
+
+::backdrop{
+    background-color: #f00;
+opacity: 0.8;
+}
+
+#lightbox::before{
+    content: "X";
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    background-color: #0f0;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 10px solid #f00;
+}
